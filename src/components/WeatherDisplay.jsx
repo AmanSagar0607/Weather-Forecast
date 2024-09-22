@@ -61,7 +61,7 @@ function WeatherDisplay({ weatherData, unit }) {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:gap-6 ">
-        <WeatherDetailSmall icon={<WiRaindrop className="text-blue-500 text-3xl sm:text-4xl" />} value={`${current.humidity}%`} />
+        <WeatherDetailSmall icon={<WiRaindrop className="text-blue-700 text-3xl sm:text-4xl" />} value={`${current.humidity}%`} />
         <WeatherDetailSmall icon={<WiWindDeg className="text-green-500 text-3xl sm:text-4xl" />} value={`${current.wind_kph} km/h`} />
         </div>
       </div>
@@ -96,7 +96,7 @@ function WeatherDisplay({ weatherData, unit }) {
         <h4 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-200">Weather Details</h4>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
         <WeatherDetailCard title="Feels Like" value={`${unit === 'C' ? current.feelslike_c : current.feelslike_f}°${unit}`} icon={<WiThermometer className="text-red-500 text-3xl sm:text-4xl" />} />
-          <WeatherDetailCard title="Humidity" value={`${current.humidity}%`} icon={<WiHumidity className="text-blue-500 text-3xl sm:text-4xl"  />} />
+          <WeatherDetailCard title="Humidity" value={`${current.humidity}%`} icon={<WiHumidity className="text-blue-700 text-3xl sm:text-4xl"  />} />
           <WeatherDetailCard title="Wind Speed" value={`${current.wind_kph} km/h`} icon={<WiStrongWind className="text-green-500 text-3xl sm:text-4xl" />} />
           <WeatherDetailCard title="UV Index" value={current.uv} icon={<WiDaySunny className="text-yellow-500 text-3xl sm:text-4xl" />} />
           <WeatherDetailCard title="Pressure" value={`${current.pressure_mb} mb`} icon={<WiBarometer className="text-purple-500 text-3xl sm:text-4xl" />} />
