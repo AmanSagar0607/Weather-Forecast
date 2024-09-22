@@ -2,6 +2,10 @@
 
 A React-based weather forecast application that provides current weather information and a 5-day forecast for any city.
 
+## Live Demo
+
+You can view the live application here: [Weather Forecast App](https://weather-forecast-theta-cyan.vercel.app/)
+
 ## Setup Instructions
 
 1. Clone the repository:
@@ -59,6 +63,21 @@ This project uses Vite as the build tool and Tailwind CSS for styling. To modify
 1. Update React components in the `src/components` directory.
 2. Modify the main App component in `src/App.jsx`.
 3. Adjust styles using Tailwind classes or by editing `tailwind.config.js`.
+
+## Deployment
+
+This project is deployed on Vercel. You can view the live version at [https://weather-forecast-theta-cyan.vercel.app/](https://weather-forecast-theta-cyan.vercel.app/).
+
+To deploy your own version:
+
+1. Fork this repository.
+2. Sign up for a Vercel account at https://vercel.com.
+3. Create a new project in Vercel and import your forked repository.
+4. Set up the following environment variables in your Vercel project settings:
+   - `VITE_WEATHER_API_KEY`: Your WeatherAPI key
+5. Deploy the project.
+
+Vercel will automatically build and deploy your project whenever you push changes to your repository.
 
 ## Contributing
 
